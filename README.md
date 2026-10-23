@@ -8,13 +8,17 @@ This is a learning project. I built six resistor circuits, measured the voltages
 
 Breadboard, jumper wires, DFRobot DFR0140 power module, 9 V adapter, Klein MM420 multimeter, two 1k resistors and two 10k resistors.
 
+## Circuit diagram
+
+![Hand-drawn circuit diagram](photos/schematic.jpg)
+
 ## Files
 
 - [Report](voltage_divider_report.pdf): what I built and what I learned
 - [MATLAB code](voltage_divider_analysis.m): calculations and graphs
 - [Results](voltage_divider_results.csv): six tests
 - [Meter check](voltage_divider_accuracy.csv): voltage ranges based on the meter limits
-- [Photos](photos/): three output readings
+- [Photos](photos/): three output readings and my circuit diagram
 
 ## Run
 
