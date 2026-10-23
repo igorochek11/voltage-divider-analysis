@@ -28,8 +28,6 @@ The code saves two CSV files and two graphs in the current MATLAB folder.
 
 The measured and calculated voltages were close. Test 4 has **0.00 %** difference using the resistor label values. Its blue bar has zero height. This does not mean the meter is perfectly accurate.
 
-Current was calculated, not measured.
-
 ## Notes
 
 - Current was calculated, not measured.
