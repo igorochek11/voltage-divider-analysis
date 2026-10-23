@@ -18,10 +18,10 @@ Breadboard, jumper wires, DFRobot DFR0140 power module, 9 V adapter, Klein MM420
 
 ## Run
 
-1. Download and unzip the project.
-2. Close the CSV files in Excel.
-3. Open `voltage_divider_analysis.m` in MATLAB and click **Run**.
-
+1. Download `voltage_divider_analysis.m`.
+2. Open the file in MATLAB.
+3. Click **Run**.
+   
 The code saves two CSV files and two graphs in the current MATLAB folder.
 
 ## Results
@@ -32,7 +32,8 @@ Current was calculated, not measured.
 
 ## Notes
 
-- Test 2: the photo shows 0.828 V; my typed record is 0.829 V. The table keeps 0.829 V.
+- Current was calculated, not measured.
+- The report explains the multimeter accuracy.
 
 ## Graphs
 
