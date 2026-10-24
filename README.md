@@ -2,7 +2,7 @@
 
 **Igor Subbotin**
 
-This is a learning project. I built six resistor circuits, measured the voltages, and compared them with MATLAB calculations. The input voltage was 4.98 V.
+I built six resistor circuits, measured the voltages, and compared them with MATLAB calculations. All six readings were within about 0.6% of the values calculated using the resistor labels. The measured and calculated voltage ranges overlapped in all six tests using assumed meter ranges and the accuracy limits in the MM420 manual. The input voltage was 4.98 V.
 
 ## Parts
 
@@ -36,6 +36,7 @@ The measured and calculated voltages were close. Test 4 has **0.00 %** differenc
 
 - Current was calculated, not measured.
 - The report explains the multimeter accuracy.
+- Some meter ranges and the manual's temperature and calibration conditions were not recorded.
 
 ## Graphs
 

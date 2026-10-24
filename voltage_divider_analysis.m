@@ -6,7 +6,7 @@ Experiment = (1:6)';
 Vin_V = [4.98; 4.98; 4.98; 4.98; 4.98; 4.98];
 R1_nom_Ohm = [10000; 10000; 10000; 1000; 1000; 1000];
 R2_nom_Ohm = [1000; 2000; 10000; 5000; 10000; 20000];
-Vout_meas_V = [0.45; 0.829; 2.489; 4.15; 4.53; 4.74];
+Vout_meas_V = [0.450; 0.828; 2.489; 4.15; 4.53; 4.74];
 
 % Readings for the two 10k parts and the two 1k parts.
 R10_A = 9830; R10_B = 9890;
@@ -78,8 +78,8 @@ Assumed_Vout_range_V = [4; 4; 4; 40; 40; 40];
 Vout_resolution_V = [0.001; 0.001; 0.001; 0.01; 0.01; 0.01];
 Vout_meter_limit_V = 0.005 .* Vout_meas_V + 5 .* Vout_resolution_V;
 
-% Leave extra room for rounding in the shorter 0.45V record.
-Vout_recording_allowance_V = [0.005; 0; 0; 0; 0; 0];
+% Full voltage display readings are kept; no rounding allowance is needed.
+Vout_recording_allowance_V = [0; 0; 0; 0; 0; 0];
 Vout_interval_low_V = Vout_meas_V - Vout_meter_limit_V ...
     - Vout_recording_allowance_V;
 Vout_interval_high_V = Vout_meas_V + Vout_meter_limit_V ...
@@ -123,5 +123,5 @@ accuracy = table(Experiment, Assumed_Vout_range_V, Vout_resolution_V, ...
     Intervals_overlap, Residual_measuredR_V, Vout_loaded_10M_V, Loading_shift_V);
 disp(accuracy);
 writetable(accuracy, 'voltage_divider_accuracy.csv');
-fprintf('Conditional interval overlap: %d of %d tests.\n', ...
+fprintf('Tests where the measured and calculated ranges overlap: %d of %d\n', ...
     sum(Intervals_overlap), numel(Experiment));
